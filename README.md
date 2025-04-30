@@ -1,4 +1,4 @@
-## PractiCal exam
+## Practical exam
 
 ## Maitri Rajpara
 
@@ -15,7 +15,7 @@
   Show current player and scores.
   Show end screen with winner.
   Save state: flipped cards, scores, turn.
-  
+
 - Stretch:
   Add a turn countdown timer (e.g., 60s) shown on screen.
   Restart and resume options.
