@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/index.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1>Memory Game</h1>
+            <div class="players">
+                <div id="player1">Player 1: <span id="score1">0</span></div>
+                <div id="player2">Player 2: <span id="score2">0</span></div>
+            </div>
+            <div class="controls">
+                <button id="restart-btn">Restart</button>
+                <button id="resume-btn">Resume</button>
+                <div id="timer">Time Left: <span id="time">60</span>s</div>
+            </div>
+        </header>
+        <main id="grid" class="grid-4x4"></main>
+
+        <footer id="footer">
+            <h2 id="winner">Winner: Player 1</h2>
+            <button id="playAgain-btn">Play Again</button>
+        </footer>
+    </body>
+    <script src="./scripts/main.ts"></script>
+</html>

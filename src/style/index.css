@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff4e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff4e6;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 10px 0;
+}
+
+.players div {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.controls {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff8a65;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff7043;
+}
+
+#timer {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.grid-4x4 {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 15px;
+    margin: 40px 0;
+    justify-content: center;
+}
+
+.grid-4x4 .card {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    user-select: none;
+    transition: transform 0.2s ease;
+}
+
+.grid-4x4 .card:hover {
+    transform: scale(1.05);
+}
+
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff4e6;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#winner {
+    font-size: 1.5rem;
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
