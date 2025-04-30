@@ -1,17 +1,17 @@
 export function initUI(totalTime: number): void {
     document.body.innerHTML = `
         <header>
-            <h3>Memory Game</h3>
+            <h1>Memory Game</h1>
             <div class="players">
                 <div id="player1">Player 1: <span id="score1">0</span></div>
                 <div id="player2">Player 2: <span id="score2">0</span></div>
             </div>
         </header>
         <main id="grid" class="grid-4x4"></main>
+        <div id="toggle"><button></button></div>
         <div>
             <div id="timer">Time Left: <span id="time">${totalTime}</span>s</div>
         </div>
-        <div id="toggle"><button></button></div>
         <footer id="footer">
             <div class="controls">
                 <button id="restart-btn" title="Restart">
@@ -24,8 +24,9 @@ export function initUI(totalTime: number): void {
                     <i class="fa-solid fa-pause"></i>
                 </button>
             </div>
-            <h2 id="winner">Winner:</h2>
-            <button id="playAgain-btn">Play Again</button>
+            <h2 id="winner"></h2>
+            <div class="play-again">
+            <button id="playAgain-btn">Play Again</button></div>
         </footer>
     `;
 }
