@@ -5,9 +5,13 @@
   "scripts": {
     "dev": "parcel serve ./src/index.html",
     "type-check": "tsc -b --noEmit",
-    "lint": "eslint src --ext .ts",
     "build": "npm run type-check  && parcel build ./src/index.html --no-autoinstall --no-optimize",
-    "format": "prettier src --write"
+    "format": "prettier src --write",
+    "clean": "rm -rf dist .parcel-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maitri-Rajpara/Practical-exam.git"
   },
   "keywords": [],
   "author": "",
