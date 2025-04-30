@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f0f0f0, #dcdcdc);
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+    padding: 10px 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 365px;
+}
+
+#player1,
+#player2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+#player1.active,
+#player2.active {
+    background-color: #e0e0e0;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.grid-4x4 {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+    background-color: #fafafa;
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 12px;
+    padding: 8px;
+}
+
+#timer {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 15px auto;
+    padding: 10px 10px;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 190px;
+}
+
+#timer:hover {
+    background-color: #eaeaea;
+    transform: scale(1.03);
+}
+
+#time {
+    font-weight: bold;
+    color: #000;
+}
+
+#toggle {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#toggle button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #333333, #666666);
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition:
+        background 0.3s ease,
+        transform 0.2s ease;
+}
+
+#toggle button:hover {
+    background: linear-gradient(to right, #111111, #444444);
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.controls button {
+    background-color: #444;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s;
+}
+
+.controls button:hover {
+    background-color: #222;
+    transform: scale(1.05);
+}
+
+#winner {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin: 15px 0;
+}
+
+.play-again {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playAgain-btn {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s;
+}
+
+#playAgain-btn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+i.fa-solid {
+    font-size: 1.2rem;
+}
+
+.card {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-color: #999;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
