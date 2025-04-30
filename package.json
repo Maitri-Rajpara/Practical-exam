@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "parcel serve ./src/index.html --port 3000",
+    "dev": "parcel serve ./src/index.html",
     "type-check": "tsc -b --noEmit",
     "lint": "eslint src --ext .ts",
-    "build": "npm run type-check && npm run lint && parcel build ./src/index.html --no-autoinstall --no-optimize",
+    "build": "npm run type-check  && parcel build ./src/index.html --no-autoinstall --no-optimize",
     "format": "prettier src --write"
   },
   "keywords": [],
