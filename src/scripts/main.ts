@@ -106,7 +106,6 @@ function resetGame(): void {
 
 function togglePlayer(): void {
     gameState.currentPlayerIndex = (gameState.currentPlayerIndex + 1) % 2;
-    console.log('timer');
     resetTimer();
     updateCurrentPlayer();
 }
