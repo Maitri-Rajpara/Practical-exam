@@ -97,6 +97,7 @@ function resetGame(): void {
     gameState.isGameActive = true;
     updateScores();
     renderCards();
+    console.log('hello')
     playAgainBtn.style.display = 'none';
     timerEl.textContent = totalTime.toString();
     winnerEl.style.display = 'none';
